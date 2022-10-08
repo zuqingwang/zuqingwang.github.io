@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Function test</title>
+    <link href="/posts/function-test.html"/>
+    <url>/posts/function-test.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="This-is-H1-title"><a href="#This-is-H1-title" class="headerlink" title="This is H1 title"></a>This is H1 title</h1><p> Tested by zq on 2022&#x2F;10&#x2F;08.</p><h2 id="This-is-H2-title"><a href="#This-is-H2-title" class="headerlink" title="This is H2 title"></a>This is H2 title</h2><p>Now we test in-line formula: $a^2+b^2&#x3D;c^2$.</p><h3 id="This-is-H3-title"><a href="#This-is-H3-title" class="headerlink" title="This is H3 title"></a>This is H3 title</h3><p>Here we test math mode<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="alright let's try some English instead of Chinese... 似乎并不是中文的锅=。= 似乎是$[$^1$]$后边需要有一个空格。">[1]</span></a></sup> :</p><p>$$<br>E &#x3D; mc^2<br>$$</p><h4 id="This-is-H4-title"><a href="#This-is-H4-title" class="headerlink" title="This is H4 title"></a>This is H4 title</h4><div class="note note-success">            <p>$\text{Does it work?} IDK.$ Outside math mode here.</p>          </div><h2 id="Practice"><a href="#Practice" class="headerlink" title="Practice"></a>Practice</h2><h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>Pound-Drever-Hall (PDH) method: first used in microwave frequency stabilization, then expanded to optical field in LIGO project.</p><p>A naive idea to lock the laser is to lock the laser on the transmission signal of FP cavity. </p><img src="\img\post\simple test\transmission signal.jpg" alt="transmission signal" style="zoom:25%;" /><p>Transmitted intensity profile for a cavity with two identical mirrors. The blue curve represents the transmission profile of a cavity without losses. Mirror losses are considered for the orange curve.</p><p>**However, for photon in a high finesse cavity, the lifetime is pretty long ($\tau &#x3D; \mathcal{F}L &#x2F; \pi c$, ~10$\mu \mathrm{s}$), which means the transmission signal have a delay on laser frequency. **</p><img src="\img\post\simple test\cavity photon lifetime.png" alt="cavity photon lifetime" style="zoom: 33%;" /><p><strong>This is fatal, as any noise whose frequency is higher than $1&#x2F;10\mu\mathrm{s} \sim 100\mathrm{kHz}$ cannot be cancelled.</strong></p><p>The solution is to utilize the reflection signal.</p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>alright let’s try some English instead of Chinese… 似乎并不是中文的锅&#x3D;。&#x3D; 似乎是$[$^1$]$后边需要有一个空格。<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>Fluid</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/posts/hello-world.html"/>
+    <url>/posts/hello-world.html</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
