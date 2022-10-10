@@ -4,6 +4,44 @@
   
   
   <entry>
+    <title>逼逼：S1-01</title>
+    <link href="/posts/%E9%80%BC%E9%80%BC%EF%BC%9As1-01.html"/>
+    <url>/posts/%E9%80%BC%E9%80%BC%EF%BC%9As1-01.html</url>
+    
+    <content type="html"><![CDATA[<p>这是一个新的category，就叫bb（逼逼）好了。</p><p>看了看，Hexo的theme还蛮多的。Fluid虽然很简洁整齐，但似乎功能确实不算完整（指花哨）。</p><p>在想如何叛教x</p><p>我看butterfly和matery就不错（</p><p>看到的几个reference吧</p><p><a href="https://shaoshaossm.github.io/">https://shaoshaossm.github.io/</a></p><p><a href="https://www.fomal.cc/">https://www.fomal.cc/</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>bb</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>set-footer</title>
+    <link href="/posts/set-footer.html"/>
+    <url>/posts/set-footer.html</url>
+    
+    <content type="html"><![CDATA[<p>rt。对于Fluid主题，在<code>\node_modules\hexo-theme-fluid\layout\_partials\footer.ejs</code>里添加这么一段（我是在<code>&lt;% if(theme.footer.beian.enable) &#123; %&gt;</code>前添加的）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs ejs">&lt;span id=&quot;timeDate&quot;&gt;载入天数...&lt;/span&gt;&lt;span id=&quot;times&quot;&gt;载入时分秒...&lt;/span&gt;<br>&lt;script&gt;<br>    var now = new Date(); <br>    function createtime() &#123; <br>        var grt= new Date(&quot;08/10/2018 17:38:00&quot;);//在此处修改你的建站时间<br>        now.setTime(now.getTime()+250); <br>        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); <br>        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); <br>        if(String(hnum).length ==1 )&#123;hnum = &quot;0&quot; + hnum;&#125; minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); <br>        mnum = Math.floor(minutes); if(String(mnum).length ==1 )&#123;mnum = &quot;0&quot; + mnum;&#125; <br>        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); <br>        snum = Math.round(seconds); if(String(snum).length ==1 )&#123;snum = &quot;0&quot; + snum;&#125; <br>        document.getElementById(&quot;timeDate&quot;).innerHTML = &quot;本站竟然已安全运行 &quot;+dnum+&quot; 天 &quot;; <br>        document.getElementById(&quot;times&quot;).innerHTML = hnum + &quot; 小时 &quot; + mnum + &quot; 分 &quot; + snum + &quot; 秒&quot;; <br>    &#125; <br>setInterval(&quot;createtime()&quot;,250);<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure><p>即可实现运行时间计数。</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://moguangpeng998.github.io/2020/06/05/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/">Hexo博客优化-添加网站运行时间</a></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Fluid</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hexo-Fluid Problems</title>
     <link href="/posts/hexo-fluid-problems.html"/>
     <url>/posts/hexo-fluid-problems.html</url>
