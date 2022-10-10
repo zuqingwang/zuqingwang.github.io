@@ -1464,6 +1464,8 @@ post-custom {
   object-fit: cover;
   max-width: 100%;
   margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .page-content,
