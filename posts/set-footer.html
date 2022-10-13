@@ -45,6 +45,8 @@
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -317,9 +319,9 @@
                 
                 <p>rt。对于Fluid主题，在<code>\node_modules\hexo-theme-fluid\layout\_partials\footer.ejs</code>里添加这么一段（我是在<code>&lt;% if(theme.footer.beian.enable) &#123; %&gt;</code>前添加的）：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs ejs">&lt;span id=&quot;timeDate&quot;&gt;载入天数...&lt;/span&gt;&lt;span id=&quot;times&quot;&gt;载入时分秒...&lt;/span&gt;<br>&lt;script&gt;<br>    var now = new Date(); <br>    function createtime() &#123; <br>        var grt= new Date(&quot;08/10/2018 17:38:00&quot;);//在此处修改你的建站时间<br>        now.setTime(now.getTime()+250); <br>        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); <br>        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); <br>        if(String(hnum).length ==1 )&#123;hnum = &quot;0&quot; + hnum;&#125; minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); <br>        mnum = Math.floor(minutes); if(String(mnum).length ==1 )&#123;mnum = &quot;0&quot; + mnum;&#125; <br>        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); <br>        snum = Math.round(seconds); if(String(snum).length ==1 )&#123;snum = &quot;0&quot; + snum;&#125; <br>        document.getElementById(&quot;timeDate&quot;).innerHTML = &quot;本站竟然已安全运行 &quot;+dnum+&quot; 天 &quot;; <br>        document.getElementById(&quot;times&quot;).innerHTML = hnum + &quot; 小时 &quot; + mnum + &quot; 分 &quot; + snum + &quot; 秒&quot;; <br>    &#125; <br>setInterval(&quot;createtime()&quot;,250);<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
-
 <p>即可实现运行时间计数。</p>
-<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a target="_blank" rel="noopener" href="https://moguangpeng998.github.io/2020/06/05/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/">Hexo博客优化-添加网站运行时间</a></p>
+<h3 id="Reference">Reference</h3>
+<p><a target="_blank" rel="noopener" href="https://moguangpeng998.github.io/2020/06/05/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/">Hexo博客优化-添加网站运行时间</a></p>
 
                 
               </div>
@@ -458,7 +460,6 @@
 
   
   
-
 
 
 
@@ -657,49 +658,6 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-
-        Fluid.events.registerRefreshCallback(function() {
-          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
-            MathJax.startup.document.state(0);
-            MathJax.texReset();
-            MathJax.typeset();
-            MathJax.typesetPromise();
-          }
-        });
-      </script>
-    
-
-  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
