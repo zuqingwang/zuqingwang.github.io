@@ -25,7 +25,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zuqingwang.github.io/img/post/simple%20test/1.jpg">
 <meta property="article:published_time" content="2022-10-08T13:48:24.698Z">
-<meta property="article:modified_time" content="2022-10-10T04:48:03.713Z">
+<meta property="article:modified_time" content="2022-10-14T11:13:49.155Z">
 <meta property="article:author" content="zq">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Fluid">
@@ -264,7 +264,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k words
+          2k words
         
       </span>
     
@@ -275,7 +275,7 @@
         
         
         
-          4 mins
+          5 mins
         
       </span>
     
@@ -318,7 +318,7 @@
               <p class="note note-info">
                 
                   
-                    Last updated on October 10, 2022 12:48:03 PM
+                    Last updated on October 14, 2022 7:13:49 PM
                   
                 
               </p>
@@ -339,6 +339,24 @@
 <div class="note note-success">
             <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Does it work?</mtext><mi>I</mi><mi>D</mi><mi>K</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\text{Does it work?} IDK.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord text"><span class="mord">Does it work?</span></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.07153em;">DK</span><span class="mord">.</span></span></span></span> Outside math mode here.</p>
           </div>
+<h2 id="Picture-test">Picture test</h2>
+<p>Note that in markdown file path, we use <code>/</code> while in html we use <code>\</code>.</p>
+<h3 id="Markdown">Markdown</h3>
+<p>markdown format <code>![]()</code> with <code>spacebar</code> in <code>.png</code> file name, folder contains <code>spacebar</code> as well.</p>
+<p>![test1](/img/post/simple test/cavity photon lifetime.png)</p>
+<p>markdown format <code>![]()</code> with <code>_</code> connected in <code>.png</code> file name, folder contains <code>spacebar</code> as well.</p>
+<p>![test2](/img/post/simple test/cavity_photon_lifetime.png)</p>
+<p>markdown format <code>![]()</code> with <code>spacebar</code> in <code>.png</code> file name, folder doesn’t contain <code>spacebar</code>.</p>
+<p>![test5](/img/post/PDH-method-theory/cavity photon lifetime.png)</p>
+<p>markdown format <code>![]()</code> with <code>_</code> connected in <code>.png</code> file name, folder doesn’t contain <code>spacebar</code>.</p>
+<p><img src="/img/post/PDH-method-theory/cavity_photon_lifetime.png" srcset="/img/loading.gif" lazyload alt="test6"></p>
+<p>cannot zoom picture in markdown format. But we have a title under the picture.</p>
+<h3 id="HTML">HTML</h3>
+<p>html format <code>&lt;img src=&quot; &quot; /&gt;</code> with <code>spacebar</code> in <code>.png</code> file name.</p>
+<img src="\img\post\simple test\cavity photon lifetime.png" srcset="/img/loading.gif" lazyload alt="test3" style="zoom:33%;" />
+<p>hrml format <code>&lt;img src=&quot; &quot; /&gt;</code> with <code>_</code> connected in <code>.png</code> file name.</p>
+<img src="\img\post\simple test\cavity_photon_lifetime.png" srcset="/img/loading.gif" lazyload alt="test4" style="zoom:33%;" />
+<p>always work! But no title.</p>
 <h2 id="Practice">Practice</h2>
 <h3 id="Motivation">Motivation</h3>
 <p>Pound-Drever-Hall (PDH) method: first used in microwave frequency stabilization, then expanded to optical field in LIGO project.</p>
