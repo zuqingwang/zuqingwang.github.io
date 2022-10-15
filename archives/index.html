@@ -253,13 +253,25 @@
                 
 
 <div class="list-group">
-  <p class="h4">10 posts in total</p>
+  <p class="h4"><span class="label label-primary">
+    11 posts
+  </span>
+  <span class="label label-success" style="margin-left: 20px;">
+    17k words
+  </span></p>
+
   <hr>
   
   
     
       
       <p class="h5">2022</p>
+    
+    <a href="/posts/Hexo-Fluid-Update/word-count-in-archive" class="list-group-item list-group-item-action">
+      <time>10-16</time>
+      <div class="list-group-item-title">实现全站字数统计</div>
+    </a>
+  
     
     <a href="/posts/Hexo-Fluid-Update/encrypt-trial" class="list-group-item list-group-item-action">
       <time>10-15</time>
@@ -314,13 +326,14 @@
       <div class="list-group-item-title">Function test</div>
     </a>
   
-    
-    <a href="/posts/0/hello-world" class="list-group-item list-group-item-action">
-      <time>10-08</time>
-      <div class="list-group-item-title">Hello World</div>
-    </a>
-  
 </div>
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/#board">2</a><a class="extend next" rel="next" href="/archives/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
 
 
 
@@ -377,7 +390,7 @@
   
   
   <!-- 全站字数统计 -->
-  <!-- <span>站点总字数: 16k</span>  -->
+  <!-- <span>站点总字数: 17k</span>  -->
   
   <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
   <script>
