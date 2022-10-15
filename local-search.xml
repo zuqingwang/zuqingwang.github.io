@@ -8,7 +8,7 @@
     <link href="/posts/Hexo-Fluid-Update/pdfjs-trial.html"/>
     <url>/posts/Hexo-Fluid-Update/pdfjs-trial.html</url>
     
-    <content type="html"><![CDATA[<iframe src='../../../pdfjs\web\viewer.html?file=<../../../../resources/pdf/Books/Ultracold-Atomic-Physics.pdf>' style='width:100%;height:100%'></iframe><iframe src='https://zuqingwang.github.io/pdfjs/web/viewer.html?file=<https://zuqingwang.github.io/resources/pdf/Books/Ultracold-Atomic-Physics.pdf>' style='width:100%;height:100%'></iframe><iframe src='https://mozilla.github.io/pdf.js/web/viewer.html?file=<https://zuqingwang.github.io/resources/pdf/Books/Ultracold-Atomic-Physics.pdf>' style='width:100%;height:100%'></iframe>]]></content>
+    <content type="html"><![CDATA[<iframe src='../../../pdfjs\web\viewer.html?file=../../../../resources/pdf/Books/Ultracold-Atomic-Physics.pdf' style='width:100%;height:100%'></iframe><iframe src='https://zuqingwang.github.io/pdfjs/web/viewer.html?file=https://zuqingwang.github.io/resources/pdf/Books/Ultracold-Atomic-Physics.pdf' style='width:100%;height:100%'></iframe><iframe src='https://mozilla.github.io/pdf.js/web/viewer.html?file=https://zuqingwang.github.io/resources/pdf/Books/Ultracold-Atomic-Physics.pdf' style='width:100%;height:100%'></iframe>]]></content>
     
     
     <categories>
