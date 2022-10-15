@@ -4,6 +4,50 @@
   
   
   <entry>
+    <title>pdf.jstrial</title>
+    <link href="/posts/Hexo-Fluid-Update/pdfjs-trial.html"/>
+    <url>/posts/Hexo-Fluid-Update/pdfjs-trial.html</url>
+    
+    <content type="html"><![CDATA[<iframe src='..\pdfjs\web\viewer.html?file=<../resources/pdf/Books/Ultracold-Atomic-Physics.pdf>' style='width:100%;height:100%'></iframe>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hexo-Fluid Update</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>To do list</title>
+    <link href="/posts/Hexo-Fluid-Update/todo-1.html"/>
+    <url>/posts/Hexo-Fluid-Update/todo-1.html</url>
+    
+    <content type="html"><![CDATA[<p>写个to-do list，放一些想做的功能。</p><p>需要写自己实现这些功能的note，以及建站的note。</p><h3 id="Copyright-3">Copyright: 3</h3><p><a href="https://www.erenship.com/posts/40222.html">https://www.erenship.com/posts/40222.html</a></p><p><a href="https://github.com/fluid-dev/hexo-theme-fluid/issues/460">https://github.com/fluid-dev/hexo-theme-fluid/issues/460</a></p><p><a href="https://github.com/fluid-dev/hexo-theme-fluid/issues/497">https://github.com/fluid-dev/hexo-theme-fluid/issues/497</a></p><h3 id="Encrypt-2">Encrypt: 2</h3><p><a href="https://www.yousazoe.top/archives/4990ad81.html">https://www.yousazoe.top/archives/4990ad81.html</a></p><p><a href="https://github.com/fluid-dev/hexo-theme-fluid/issues/768">https://github.com/fluid-dev/hexo-theme-fluid/issues/768</a></p><p><a href="https://www.xifenghhh.top/posts/387.html">https://www.xifenghhh.top/posts/387.html</a></p><h3 id="HTML-Things">HTML Things</h3><h4 id="Font-size-color-position">Font size/color/position</h4><h4 id="页面内-外跳转（锚点）-2">页面内/外跳转（锚点）: 2</h4><h4 id="iFrame">iFrame</h4><p><a href="https://www.yousazoe.top/archives/f0a0db79.html#demo">https://www.yousazoe.top/archives/f0a0db79.html#demo</a></p><h3 id="记忆浏览位置">记忆浏览位置</h3><p><a href="https://qianling.pw/hexo-optimization/#14-%E8%AE%B0%E5%BF%86%E6%B5%8F%E8%A7%88%E4%BD%8D%E7%BD%AE">https://qianling.pw/hexo-optimization/#14-记忆浏览位置</a></p><h3 id="Picture-Title">Picture Title</h3><p><a href="https://github.com/fluid-dev/hexo-theme-fluid/issues/673">https://github.com/fluid-dev/hexo-theme-fluid/issues/673</a></p><h3 id="Total-Word-Count-3">Total Word Count: 3</h3><p><a href="https://github.com/fluid-dev/hexo-theme-fluid/issues/811">https://github.com/fluid-dev/hexo-theme-fluid/issues/811</a></p><h3 id="TOC">TOC</h3><p><a href="https://github.com/fluid-dev/hexo-theme-fluid/issues?page=3&amp;q=is%3Aissue+is%3Aclosed">https://github.com/fluid-dev/hexo-theme-fluid/issues?page=3&amp;q=is%3Aissue+is%3Aclosed</a></p><h3 id="Sub-Slogan-3">Sub-Slogan: 3</h3><p><a href="https://github.com/fluid-dev/hexo-theme-fluid/issues/664">https://github.com/fluid-dev/hexo-theme-fluid/issues/664</a><br><a href="https://github.com/fluid-dev/hexo-theme-fluid/issues/665">https://github.com/fluid-dev/hexo-theme-fluid/issues/665</a></p><h3 id="Icon">Icon</h3><p><a href="https://hexo.fluid-dev.com/docs/icon/#%E5%86%85%E7%BD%AE%E7%A4%BE%E4%BA%A4%E5%9B%BE%E6%A0%87">https://hexo.fluid-dev.com/docs/icon/#内置社交图标</a></p><h3 id="pdf-js-1">pdf.js: 1</h3><p><a href="https://www.zywvvd.com/notes/hexo/theme/fluid/fluid-pdf/fluid-pdf/">https://www.zywvvd.com/notes/hexo/theme/fluid/fluid-pdf/fluid-pdf/</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hexo-Fluid Update</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>逼逼：S1-02</title>
     <link href="/posts/bb/bb-s1-02.html"/>
     <url>/posts/bb/bb-s1-02.html</url>
