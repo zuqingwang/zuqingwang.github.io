@@ -25,7 +25,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zuqingwang.github.io/img/post/simple%20test/1.jpg">
 <meta property="article:published_time" content="2022-10-20T04:23:01.000Z">
-<meta property="article:modified_time" content="2022-10-20T05:20:28.636Z">
+<meta property="article:modified_time" content="2022-10-20T05:36:04.072Z">
 <meta property="article:author" content="zq">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://zuqingwang.github.io/img/post/simple%20test/1.jpg">
@@ -326,7 +326,7 @@
               <p class="note note-info">
                 
                   
-                    Last updated on October 20, 2022 1:20:28 PM
+                    Last updated on October 20, 2022 1:36:04 PM
                   
                 
               </p>
@@ -351,7 +351,7 @@
 </ol>
 <p>ps. 当然，平时配置DDS还是通过串口通信的方式实现的，而且设计上其实留有并口的接口。</p>
 <p>方案只剩下一种，自然是使用三个bit来切换profile。这种方式有和并口可比的速度（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∼</mo><mn>100</mn><mtext>ns</mtext></mrow><annotation encoding="application/x-tex">\sim100\text{ns}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">100</span><span class="mord text"><span class="mord">ns</span></span></span></span></span>），同时只需要三位bit就可以实现8个profile的切换，看起来十分的划算。</p>
-<h3 id="那么，代价是什么呢？">那么，代价是什么呢？</h3>
+<h2 id="那么，代价是什么呢？">那么，代价是什么呢？</h2>
 <p>至今实验室中还没有一块多通道DDS可以实现profile的全正确切换。比如我从000切换到001，只有一个管脚的值发生了改变，这是一定可以切对的，但从001切换到010，有两位同时改变，这时DDS可能会错误的识别为各种奇怪的值，比如011，并保持在这个错误的profile。</p>
 <p>那切换profile会有概率切换错，这谁还敢用？</p>
 <p>当然，有妥协的办法：使用格雷码。这样每次DDS切换profile都只改变一位，如我想从001切换到010，可以使用如下路径：001-&gt;000(or 011)-&gt;010。</p>
