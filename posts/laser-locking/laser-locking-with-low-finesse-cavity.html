@@ -25,7 +25,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zuqingwang.github.io/img/post/simple%20test/1.jpg">
 <meta property="article:published_time" content="2022-12-28T11:36:13.000Z">
-<meta property="article:modified_time" content="2023-02-04T11:50:13.712Z">
+<meta property="article:modified_time" content="2023-02-04T11:52:48.919Z">
 <meta property="article:author" content="zq">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://zuqingwang.github.io/img/post/simple%20test/1.jpg">
@@ -326,7 +326,7 @@
               <p class="note note-info">
                 
                   
-                    Last updated on February 4, 2023 7:50:13 PM
+                    Last updated on February 4, 2023 7:52:48 PM
                   
                 
               </p>
@@ -358,7 +358,7 @@
 <p>这样，在共振点左右的信息实际上就被编码到透射信号的相位上了，而偏离了多少的信息被编码在电信号均值上（update: 错误的，其实是Vpp）。相位信息我猜可以一如既往地用mixer来提取（这就是为啥不用三角波举例子），均值可以用低通滤波。</p>
 <p>Update: 其实解调出来的信号就是透射峰的导数，由相位和振幅共同描述。这种锁频方法叫Top of Fringe。</p>
 <p>实验上，透射峰的FWMH的大概在<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.5</mn><mrow><mi mathvariant="normal">G</mi><mi mathvariant="normal">H</mi><mi mathvariant="normal">z</mi></mrow><mi mathvariant="normal">/</mi><mn>1500</mn><mo>∼</mo><mn>1</mn><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">H</mi><mi mathvariant="normal">z</mi></mrow></mrow><annotation encoding="application/x-tex">1.5\mathrm{GHz}/1500 \sim 1\mathrm{MHz}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1.5</span><span class="mord"><span class="mord mathrm">GHz</span></span><span class="mord">/1500</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">1</span><span class="mord"><span class="mord mathrm">MHz</span></span></span></span></span>，为了使调制的光能够正常透射，调制的频率<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∼</mo><mn>10</mn><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">H</mi><mi mathvariant="normal">z</mi></mrow></mrow><annotation encoding="application/x-tex">f \sim 10\mathrm{kHz}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">10</span><span class="mord"><span class="mord mathrm">kHz</span></span></span></span></span>就足够。对于Toptica的DL pro，直接scan，然后把PD信号输入到DLC pro上的FINE里，就可以直接在软件中看到透射信号以及导数，选择需要的峰，使用Top of Fringe方法进行锁屏。信号使用数字方式在DLC pro内部的FPGA中完成。</p>
-<p>事实上，实验中用来锁780到铷泡上就是使用这种锁频方式。</p>
+<p>事实上，实验中用来锁780到铷泡（Toptica CoSy）上就是使用这种锁频方式。</p>
 
                 
               </div>
